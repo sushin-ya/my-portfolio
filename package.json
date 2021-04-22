@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "@fontsource/orbitron": "^4.2.2",
+    "@fontsource/quicksand": "^4.2.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "parallax-js": "^3.1.0",
     "react": "^16.13.1",
     "react-animated-burgers": "^1.2.8",
     "react-dom": "^16.13.1",

@@ -1,0 +1,45 @@
+#scene {
+  position: relative;
+}
+
+.astronaut img {
+  height: 40vh;
+  position: absolute;
+  bottom: calc(-90vh + 80px);
+  left: 30vw;
+}
+
+.moonface img {
+  width: 45vw;
+  position: absolute;
+  bottom: calc(-100vh + 80px);
+  left: 0;
+}
+
+.rocket img {
+  height: 60vh;
+  position: absolute;
+  bottom: calc(-90vh + 80px);
+  left: 10vw;
+}
+
+.planet img {
+  height: 15vh;
+  position: absolute;
+  bottom: calc(-50vh + 80px);
+  left: 8vw;
+}
+
+.backplanet img {
+  height: 40vh;
+  position: absolute;
+  bottom: calc(-50vh + 80px);
+  left: 25vw;
+}
+
+.background img {
+  width: 50vw;
+  position: absolute;
+  bottom: calc(-90vh + 80px);
+  left: 0;
+}

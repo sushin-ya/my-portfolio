@@ -4,7 +4,6 @@ import classes from './Header.module.css';
 import { HamburgerSpin } from 'react-animated-burgers';
 import twitter from '../../images/twitter.svg';
 import github from '../../images/github.svg';
-import '@fontsource/orbitron';
 
 export default function Header() {
   return (
