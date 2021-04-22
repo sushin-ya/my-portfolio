@@ -1,0 +1,97 @@
+.Works {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 90%;
+  /* max-width: 1200px; */
+  color: #fff;
+  font-family: 'Orbitron';
+}
+
+.Works__Inner {
+  height: calc(100vh - 80px);
+  display: flex;
+}
+
+.Works__texts {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.Works__text__title {
+  font-size: 80px;
+  font-weight: 900;
+  padding-top: 20vh;
+  position: relative;
+}
+
+.Works__text__title::before {
+  content: '03';
+  position: absolute;
+  left: 0;
+  bottom: 5vh;
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.1;
+}
+
+.Works__text__lead {
+  font-size: 28px;
+  font-family: 'Quicksand';
+  padding-top: 2vh;
+}
+
+.Works__text__btn {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #ff6584;
+  margin-top: 15vh;
+  padding: 10px 20px;
+  border-radius: 50px;
+  position: relative;
+}
+.Works__text__btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.Works__text__btn a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  pointer-events: none;
+}
+
+.Works__img {
+  position: relative;
+  flex-basis: 50%;
+  /* overflow: hidden; */
+}
+
+.astronaut img {
+  height: 50vh;
+  position: absolute;
+  bottom: 25vh;
+  left: 0;
+}
+
+.planet img {
+  height: 25vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+}
+
+.rocket img {
+  height: 10vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 20vw;
+  transform: rotate(135deg);
+}
