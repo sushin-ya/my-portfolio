@@ -1,8 +1,8 @@
 .GetInTouch {
-  margin-top: 80px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
+  scroll-snap-align: start;
+  flex: none;
+  margin: 0 auto;
+  padding-top: 80px;
   width: 90%;
   /* max-width: 1200px; */
   color: #fff;
@@ -78,7 +78,7 @@
 }
 
 .window img {
-  height: 60vh;
+  height: 70vh;
   position: absolute;
   bottom: 10vh;
   left: 0;

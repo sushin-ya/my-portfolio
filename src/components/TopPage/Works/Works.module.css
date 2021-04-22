@@ -1,4 +1,7 @@
 .Works {
+  scroll-snap-align: start;
+  flex: none;
+
   margin-top: 80px;
   margin-right: auto;
   margin-left: auto;
