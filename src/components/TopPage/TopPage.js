@@ -9,7 +9,7 @@ import GetInTouch from './GetInTouch/GetInTouch';
 
 export default function TopPage() {
   return (
-    <div className='TopPage'>
+    <div className='TopPage scroll-snapping'>
       <Top />
       <AboutMe />
       <BasicStance />

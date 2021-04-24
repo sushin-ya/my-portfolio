@@ -3,6 +3,15 @@ body {
   color: #fff;
 }
 
+.scroll-snapping {
+  display: flex;
+  flex: none;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+}
+
 .container {
   scroll-snap-align: start;
   flex: none;

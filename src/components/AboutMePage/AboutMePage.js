@@ -8,7 +8,7 @@ import WhoIAm from './WhoIAm/WhoIAm';
 
 export default function AboutMePage() {
   return (
-    <div className='AboutMePage'>
+    <div className='AboutMePage scroll-snapping'>
       <AboutMeTop />
       <WhoIAm />
       <Skill />

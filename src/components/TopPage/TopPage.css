@@ -1,8 +1,0 @@
-.TopPage {
-  display: flex;
-  flex: none;
-  flex-flow: column nowrap;
-  scroll-snap-type: y mandatory;
-  overflow: scroll;
-  height: 100vh;
-}
