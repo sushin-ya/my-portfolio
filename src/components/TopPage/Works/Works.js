@@ -1,5 +1,6 @@
 import React from 'react';
 import './Works.css';
+import { Link } from 'react-router-dom';
 
 import astronaut from '../../../images/workssvg/astronaut.svg';
 import rocket from '../../../images/workssvg/rocket.svg';
@@ -17,9 +18,9 @@ export default function Works() {
             <p>これまで制作した成果物です。</p>
           </div>
           <div className='Works__text__btn container__text__btn'>
-            <a href='#/' alt=''>
+            <Link to='/works'>
               <span>read more</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className='Works__img container__img'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
+import { Link } from 'react-router-dom';
 
 import astronaut from '../../../images/aboutmesvg/astronaut.svg';
 import planet from '../../../images/aboutmesvg/planet.svg';
@@ -17,9 +18,9 @@ export default function AboutMe() {
             <p>Who I am / Skill / Hobby</p>
           </div>
           <div className='AboutMe__text__btn container__text__btn'>
-            <a href='#/' alt=''>
+            <Link to='/aboutme'>
               <span>read more</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className='AboutMe__img container__img'>
