@@ -1,7 +1,7 @@
 import React from 'react';
 import './GetInTouch.css';
 
-import window from '../../../images/getintouchsvg/window.svg';
+import window from '../../../images/TopPage/getintouchsvg/window.svg';
 import twitter from '../../../images/twitter.svg';
 import github from '../../../images/github.svg';
 

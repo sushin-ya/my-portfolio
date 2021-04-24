@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutMeTop.css';
 
-import astronaut from '../../../images/aboutmesvg/astronaut.svg';
-import planet from '../../../images/aboutmesvg/planet.svg';
+import astronaut from '../../../images/TopPage/aboutmesvg/astronaut.svg';
+import planet from '../../../images/TopPage/aboutmesvg/planet.svg';
 
 export default function AboutMeTop() {
   return (

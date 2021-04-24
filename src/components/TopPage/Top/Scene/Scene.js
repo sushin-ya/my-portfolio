@@ -3,12 +3,12 @@ import './Scene.css';
 
 import Parallax from 'parallax-js';
 
-import astronaut from '../../../../images/topsvg/astronaut.svg';
-import background from '../../../../images/topsvg/background.svg';
-import backplanet from '../../../../images/topsvg/backplanet.svg';
-import moonface from '../../../../images/topsvg/moonface.svg';
-import planet from '../../../../images/topsvg/planet.svg';
-import rocket from '../../../../images/topsvg/rocket.svg';
+import astronaut from '../../../../images/TopPage/topsvg/astronaut.svg';
+import background from '../../../../images/TopPage/topsvg/background.svg';
+import backplanet from '../../../../images/TopPage/topsvg/backplanet.svg';
+import moonface from '../../../../images/TopPage/topsvg/moonface.svg';
+import planet from '../../../../images/TopPage/topsvg/planet.svg';
+import rocket from '../../../../images/TopPage/topsvg/rocket.svg';
 
 export default function Scene() {
   useEffect(() => {

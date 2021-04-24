@@ -2,7 +2,7 @@ import React from 'react';
 import './BasicStance.css';
 import { Link } from 'react-router-dom';
 
-import moonrocket from '../../../images/basicstancesvg/moonrocket.svg';
+import moonrocket from '../../../images/TopPage/basicstancesvg/moonrocket.svg';
 
 export default function BasicStance() {
   return (

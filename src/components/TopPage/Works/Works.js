@@ -2,9 +2,9 @@ import React from 'react';
 import './Works.css';
 import { Link } from 'react-router-dom';
 
-import astronaut from '../../../images/workssvg/astronaut.svg';
-import rocket from '../../../images/workssvg/rocket.svg';
-import planet from '../../../images/workssvg/planet.svg';
+import astronaut from '../../../images/TopPage/workssvg/astronaut.svg';
+import rocket from '../../../images/TopPage/workssvg/rocket.svg';
+import planet from '../../../images/TopPage/workssvg/planet.svg';
 
 export default function Works() {
   return (
