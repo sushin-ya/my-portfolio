@@ -1,0 +1,22 @@
+.AboutMe__Top__text__title::before {
+  content: 'AboutMe';
+  left: -1vw;
+}
+
+.AboutMe__Top__text__subtitle p {
+  font-size: 40px;
+}
+
+.AboutMe__Top__astronaut img {
+  height: 60vh;
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+}
+
+.AboutMe__Top__planet img {
+  height: 20vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 30vw;
+}

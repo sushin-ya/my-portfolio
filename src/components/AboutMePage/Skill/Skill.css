@@ -1,0 +1,41 @@
+.Skill__Inner {
+  flex-direction: column;
+}
+
+.Skill__texts {
+  flex-basis: 65% !important;
+}
+
+.Skill__text__title::before {
+  content: '02';
+}
+
+.Skill__text__title h1::after {
+  content: '- 現在のスキル -';
+}
+
+.Skill__text__description {
+  margin-top: 3vh;
+  font-family: 'Quicksand';
+  font-size: 20px;
+  letter-spacing: 0.2vw;
+  line-height: 5vh;
+}
+
+.Skill__text__description span {
+  color: #ff6584;
+  font-size: 24px;
+}
+
+.Skill__icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Skill__icons__item {
+  text-align: center;
+  flex-basis: 30%;
+}

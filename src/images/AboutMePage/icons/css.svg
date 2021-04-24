@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="82" viewBox="0 0 81 82">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="SVGID" width="81" height="82" transform="translate(0.323 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_44" data-name="グループ 44" transform="translate(-0.323 0)" clip-path="url(#clip-path)">
+    <g id="マスクグループ_11" data-name="マスクグループ 11" transform="translate(11.36 0.171)">
+      <g id="css3-original-wordmark">
+        <path id="パス_238" data-name="パス 238" d="M521.854,134.862h-4.8l4.993,5.417v2.579H511.765v-3.019h4.991l-4.991-5.417V131.84h10.089Zm-12.128,0h-4.8l4.993,5.417v2.579H499.636v-3.019h4.993l-4.993-5.417V131.84h10.09Zm-12.008.124h-5.18v4.725h5.179v3.146h-8.861V131.84h8.861v3.146Z" transform="translate(-476.534 -131.84)" fill="#fff"/>
+        <path id="パス_239" data-name="パス 239" d="M464.261,229.758,459,170.726h57.832l-5.268,59.022-23.683,6.567Z" transform="translate(-458.997 -154.679)" fill="#ff6584"/>
+        <path id="パス_240" data-name="パス 240" d="M529.071,238.166l19.136-5.306,4.5-50.437H529.071v55.742Z" transform="translate(-500.154 -161.549)" fill="#ff6584"/>
+        <path id="パス_241" data-name="パス 241" d="M529.07,213.394h9.58l.662-7.413H529.07v-7.24h18.155l-.174,1.942-1.779,19.95h-16.2Z" transform="translate(-500.154 -171.133)" fill="#fff"/>
+        <path id="パス_242" data-name="パス 242" d="M506.576,268.51l-.032.009-8.063-2.178-.516-5.774H490.7l1.015,11.368,14.83,4.117.034-.01V268.51Z" transform="translate(-477.616 -207.446)" fill="#ebebeb"/>
+        <path id="パス_243" data-name="パス 243" d="M538.061,251.051l-.872,9.7-8.075,2.18v7.533l14.842-4.113.109-1.224,1.26-14.072h-7.265Z" transform="translate(-500.179 -201.857)" fill="#fff"/>
+        <path id="パス_244" data-name="パス 244" d="M503.315,198.739v7.239H485.828l-.146-1.627-.33-3.67-.174-1.942Zm-.025,14.654v7.24h-7.96l-.145-1.627-.33-3.673-.174-1.942Z" transform="translate(-474.374 -171.132)" fill="#ebebeb"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+import React from 'react';
+import './AboutMeTop.css';
+
+import astronaut from '../../../images/aboutmesvg/astronaut.svg';
+import planet from '../../../images/aboutmesvg/planet.svg';
+
+export default function AboutMeTop() {
+  return (
+    <div className='AboutMe__Top container'>
+      <div className='AboutMe__Top__Inner container__Inner'>
+        <div className='AboutMe__Top__texts container__texts'>
+          <div className='AboutMe__Top__text__title container__text__title'>
+            <h1>About Me</h1>
+          </div>
+          <div className='AboutMe__Top__text__lead container__text__lead'>
+            <p>未経験のdeveloper志望です。</p>
+            <p>Who I am / Skill / Hobby</p>
+          </div>
+          <div className='AboutMe__Top__text__subtitle container__text__subtitle'>
+            <p>tsuka-ryu</p>
+            <p>PORTFOLIO</p>
+          </div>
+        </div>
+        <div className='AboutMe__Top__img container__img'>
+          <div className='AboutMe__Top__astronaut'>
+            <img src={astronaut} alt='' />
+          </div>
+          <div className='AboutMe__Top__planet'>
+            <img src={planet} alt='' />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

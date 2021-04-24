@@ -1,0 +1,49 @@
+.Hobby__Inner {
+  flex-direction: column;
+}
+
+.Hobby__texts {
+  flex-basis: 45% !important;
+}
+
+.Hobby__text__title::before {
+  content: '03';
+}
+
+.Hobby__text__title h1::after {
+  content: '- 趣味 -';
+}
+
+.Hobby__text__description {
+  margin-top: 3vh;
+  font-family: 'Quicksand';
+  font-size: 20px;
+  letter-spacing: 0.2vw;
+}
+
+.Hobby__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.Hobby__item {
+  text-align: center;
+  flex-basis: 25%;
+}
+
+.Hobby__item__title {
+  font-size: 24px;
+  margin-top: 1vh;
+}
+
+.Hobby__item__description {
+  margin-top: 2vh;
+  padding: 0 2vw;
+  text-align: left;
+  font-family: 'Quicksand';
+  font-size: 18px;
+  opacity: 0.7;
+}

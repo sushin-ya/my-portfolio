@@ -41,6 +41,15 @@ body {
   opacity: 0.1;
 }
 
+.container__text__title h1::after {
+  content: '';
+  margin-left: 2vw;
+  font-size: 24px;
+  font-family: 'Quicksand';
+  color: #ff6584;
+  font-weight: 400;
+}
+
 .container__text__lead {
   font-size: 28px;
   font-family: 'Quicksand';
