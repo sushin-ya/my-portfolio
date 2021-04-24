@@ -1,0 +1,52 @@
+.Works__Main__Item {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20vh;
+}
+
+.Works__Item__img {
+  flex-basis: 80%;
+  text-align: center;
+}
+
+.Works__Item__img img {
+  width: 80%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.Works__Item__text {
+  flex-basis: 50%;
+  height: 50vh;
+  font-family: 'Quicksand';
+}
+
+.Works__Item__text__title {
+  font-weight: 600;
+  font-size: 32px;
+  color: #ff6584;
+}
+
+.Works__Item__text__title > span {
+  font-size: 28px;
+}
+
+.Works__Item__text__description {
+  font-size: 18px;
+  margin-top: 5vh;
+  line-height: 4vh;
+}
+
+.Works__Item__text__description > span {
+  font-size: 14px;
+}
+
+.Works__Item__text__skills {
+  margin-top: 8vh;
+}
+
+.Works__Item__text__github {
+  margin-top: 3vh;
+  height: 25px;
+}
