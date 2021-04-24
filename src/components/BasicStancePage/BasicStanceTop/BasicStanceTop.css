@@ -1,0 +1,16 @@
+.BasicStance__Top__text__title::before {
+  content: 'BasicStance';
+  left: -1vw;
+  font-size: 90px;
+}
+
+.BasicStance__Top__text__subtitle p {
+  font-size: 40px;
+}
+
+.BasicStance__Top__moonrocket img {
+  height: 80vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+}

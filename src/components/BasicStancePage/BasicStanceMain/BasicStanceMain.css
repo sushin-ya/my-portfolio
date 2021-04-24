@@ -1,0 +1,59 @@
+.BasicStance__Main__Inner {
+  flex-direction: column;
+}
+
+.BasicStance__Main__texts {
+  flex-basis: 35% !important;
+}
+
+.BasicStance__Main__text__title {
+  padding-top: 12vh;
+}
+
+.BasicStance__Main__text__title::before {
+  content: '01';
+}
+
+.BasicStance__Main__text__title h1::after {
+  content: '- 基本的な考え方 -';
+}
+
+.BasicStance__Main__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.BasicStance__Main__item {
+  text-align: center;
+  flex-basis: 33.3%;
+}
+
+.BasicStance__Main__item img {
+  height: 50px;
+}
+
+.BasicStance__Main__item__title {
+  font-size: 24px;
+  font-family: 'Quicksand';
+  margin-top: 1vh;
+}
+
+.BasicStance__Main__item__subtitle {
+  font-size: 16px;
+  font-family: 'Quicksand';
+  margin-top: 3vh;
+  opacity: 0.7;
+  line-height: 3vh;
+}
+
+.BasicStance__Main__item__description {
+  margin-top: 3vh;
+  padding: 0 2vw;
+  text-align: left;
+  font-family: 'Quicksand';
+  opacity: 0.7;
+  line-height: 4vh;
+}

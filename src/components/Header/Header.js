@@ -10,7 +10,7 @@ export default function Header() {
     <header className={classes.Header}>
       <div className={classes.Header__Inner}>
         <div>
-          <a href='#/'>tsuka-ryu</a>
+          <a href='/'>tsuka-ryu</a>
         </div>
         <ul>
           <li>
