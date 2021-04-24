@@ -16,7 +16,7 @@ export default function Hobby() {
           </div>
           <div className='Hobby__text__description'>
             <p>
-              一人で家にいることが得意です。お酒を飲みながらワイワイするのも好きです。
+              一人で家にいることが得意です。お酒を飲みながらお話するのも好きです。
             </p>
           </div>
         </div>
@@ -25,13 +25,15 @@ export default function Hobby() {
             <img src={movie} alt='' />
             <h1 className='Hobby__item__title'>movie</h1>
             <p className='Hobby__item__description'>
-              アクション、ホラー、ドラマ、SFなどジャンル問わず何でも見ます。
+              アクション、ホラー、ドラマ、SF
+              <br />
+              などジャンル問わず何でも見ます。
               <br />
               <br />
               好きな監督は、マーティン・スコセッシ、ポール・トマス・アンダーソン、ホドロフスキーなど。
               <br />
               <br />
-              いままで650本くらい見たと思いますが、まだまだ見たい映画は尽きません。
+              まだまだ見たい映画は尽きません。
             </p>
           </div>
           <div className='Hobby__item'>
@@ -40,12 +42,12 @@ export default function Hobby() {
             <p className='Hobby__item__description'>
               海外文学好きです。
               <br />
-              <br />
               ブコウスキー、カート・ヴォネガット、ジョン・アーヴィングなど
-              アメリカ文学好き。いままで500冊くらい読みました。
+              <br />
+              アメリカ文学好き。
               <br />
               <br />
-              漫画もたくさん読みます。
+              漫画もよく読みます。
               <br />
               少年少女漫画からサブカル漫画まで何でも好きです。
               <br />
@@ -57,10 +59,12 @@ export default function Hobby() {
             <img src={sake} alt='' />
             <h1 className='Hobby__item__title'>sake &amp; sakana</h1>
             <p className='Hobby__item__description'>
-              お酒とおいしい食べ物が大好き。お酒はビール、ハイボール、ウィスキー、ワイン、焼酎、日本酒、テキーラ、何でも飲みます。
+              お酒とおいしい食べ物が大好き。
+              <br />
+              お酒はビール、ハイボール、ウィスキー、ワイン、焼酎、日本酒、テキーラ、何でも飲みます。
               <br />
               <br />
-              肴には焼き鳥、刺し身、焼き肉、粉もの、何でもござれ。ただ、マヨネーズは終生の天敵です。
+              肴には焼き鳥、刺し身、焼き肉、粉もの、など。ただ、マヨネーズは終生の天敵です。
               <br />
               <br />
               ひとりか、少人数で隠れ家的なバーでしっぽり飲みたいタイプ。
