@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import classes from './Scene.module.css';
+import './Scene.css';
 
 import Parallax from 'parallax-js';
 
@@ -19,22 +19,22 @@ export default function Scene() {
 
   return (
     <div data-relative-input='true' id='scene'>
-      <div data-depth='0.1' className={classes.background}>
+      <div data-depth='0.1' className='Top__background'>
         <img src={background} alt='' />
       </div>
-      <div data-depth='0.4' className={classes.backplanet}>
+      <div data-depth='0.4' className='Top__backplanet'>
         <img src={backplanet} alt='' />
       </div>
-      <div data-depth='0.8' className={classes.planet}>
+      <div data-depth='0.8' className='Top__planet'>
         <img src={planet} alt='' />
       </div>
-      <div data-depth='0.4' className={classes.moonface}>
+      <div data-depth='0.4' className='Top__moonface'>
         <img src={moonface} alt='' />
       </div>
-      <div data-depth='1.0' className={classes.astronaut}>
+      <div data-depth='1.0' className='Top__astronaut'>
         <img src={astronaut} alt='' />
       </div>
-      <div data-depth='0.6' className={classes.rocket}>
+      <div data-depth='0.6' className='Top__rocket'>
         <img src={rocket} alt='' />
       </div>
     </div>

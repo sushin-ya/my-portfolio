@@ -1,0 +1,36 @@
+.GetInTouch__text__title::before {
+  content: '04';
+}
+
+.GetInTouch__text__link {
+  font-size: 28px;
+  font-family: 'Quicksand';
+}
+
+.GetInTouch__text__linkitem {
+  padding-top: 5vh;
+}
+
+.GetInTouch__img {
+  position: relative;
+  flex-basis: 50%;
+  /* overflow: hidden; */
+}
+
+.GetInTouch__window img {
+  height: 70vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+}
+
+.GetInTouch__twitter {
+  height: 25px;
+  width: 25px;
+}
+
+.GetInTouch__github {
+  height: 25px;
+  width: 25px;
+  margin-left: 2vw;
+}

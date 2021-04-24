@@ -1,0 +1,25 @@
+.Works__text__title::before {
+  content: '03';
+}
+
+.Works__astronaut img {
+  height: 50vh;
+  position: absolute;
+  bottom: 25vh;
+  left: 0;
+}
+
+.Works__planet img {
+  height: 25vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+}
+
+.Works__rocket img {
+  height: 10vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 20vw;
+  transform: rotate(135deg);
+}

@@ -2,42 +2,42 @@
   position: relative;
 }
 
-.astronaut img {
+.Top__astronaut img {
   height: 40vh;
   position: absolute;
   bottom: calc(-90vh + 80px);
   left: 30vw;
 }
 
-.moonface img {
+.Top__moonface img {
   width: 45vw;
   position: absolute;
   bottom: calc(-100vh + 80px);
   left: 0;
 }
 
-.rocket img {
+.Top__rocket img {
   height: 60vh;
   position: absolute;
   bottom: calc(-90vh + 80px);
   left: 10vw;
 }
 
-.planet img {
+.Top__planet img {
   height: 15vh;
   position: absolute;
   bottom: calc(-50vh + 80px);
   left: 8vw;
 }
 
-.backplanet img {
+.Top__backplanet img {
   height: 40vh;
   position: absolute;
   bottom: calc(-50vh + 80px);
   left: 25vw;
 }
 
-.background img {
+.Top__background img {
   width: 50vw;
   position: absolute;
   bottom: calc(-90vh + 80px);

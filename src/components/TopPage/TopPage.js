@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './TopPage.module.css';
+import './TopPage.css';
 
 import Top from './Top/Top';
 import AboutMe from './AboutMe/AboutMe';
@@ -9,7 +9,7 @@ import GetInTouch from './GetInTouch/GetInTouch';
 
 export default function TopPage() {
   return (
-    <div className={classes.TopPage}>
+    <div className='TopPage'>
       <Top />
       <AboutMe />
       <BasicStance />

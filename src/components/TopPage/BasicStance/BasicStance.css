@@ -1,0 +1,10 @@
+.BasicStance__text__title::before {
+  content: '02';
+}
+
+.BasicStance__moonrocket img {
+  height: 80vh;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+}

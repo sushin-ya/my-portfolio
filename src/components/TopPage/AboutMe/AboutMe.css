@@ -1,0 +1,17 @@
+.AboutMe__text__title::before {
+  content: '01';
+}
+
+.AboutMe__astronaut img {
+  height: 60vh;
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+}
+
+.AboutMe__planet img {
+  height: 20vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 30vw;
+}
