@@ -1,3 +1,20 @@
+.Works__Main__Container {
+  position: relative;
+}
+
+.Works__Main__Background {
+  position: absolute;
+  top: 0;
+  left: 20vw;
+  z-index: -1;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.Works__Main__Background img {
+  height: 300vh;
+}
+
 .Works__Main__Item {
   display: flex;
   flex-direction: row;
@@ -20,6 +37,7 @@
   flex-basis: 50%;
   height: 50vh;
   font-family: 'Quicksand';
+  margin-top: 5vh;
 }
 
 .Works__Item__text__title {

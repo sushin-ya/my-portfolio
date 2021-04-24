@@ -5,10 +5,14 @@ import newPortfolio from '../../../images/WroksPage/new_portfolio.png';
 import oldPortfolio from '../../../images/WroksPage/old_portfolio.png';
 import cinemas from '../../../images/WroksPage/cinemas.png';
 import github from '../../../images/github.svg';
+import backplanet from '../../../images/TopPage/topsvg/backplanet.svg';
 
 export default function WorksMain() {
   return (
-    <>
+    <div className='Works__Main__Container'>
+      <div className='Works__Main__Background'>
+        <img src={backplanet} alt='' />
+      </div>
       <div className='Works__Main container'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
@@ -20,7 +24,7 @@ export default function WorksMain() {
                 tsuka-ryu PORTFOLIO
               </div>
               <div className='Works__Item__text__description'>
-                本サイトが私のポートフォリオです。
+                本サイトです。
                 <br />
                 デザインから実装まですべて作成しました。
               </div>
@@ -95,6 +99,6 @@ export default function WorksMain() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
