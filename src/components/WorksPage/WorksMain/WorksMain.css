@@ -1,5 +1,6 @@
 .Works__Main__Container {
   position: relative;
+  text-shadow: 1px 1px 5px #3f3d56;
 }
 
 .Works__Main__Background {
@@ -13,6 +14,7 @@
 
 .Works__Main__Background img {
   height: 300vh;
+  opacity: 0.5;
 }
 
 .Works__Main__Item {
@@ -67,4 +69,10 @@
 .Works__Item__text__github {
   margin-top: 3vh;
   height: 25px;
+}
+
+.one::before {
+  content: 'Works';
+  left: -2vw;
+  font-size: 90px;
 }
