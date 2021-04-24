@@ -16,7 +16,7 @@ export default function Hobby() {
           </div>
           <div className='Hobby__text__description'>
             <p>
-              一人で家にいることが得意です。お酒を飲みながらお話するのも好きです。
+              一人で家にいることが得意です。居酒屋やバーでお酒を飲みながらお話するのも好きです。
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Hobby() {
               <br />
               ブコウスキー、カート・ヴォネガット、ジョン・アーヴィングなど
               <br />
-              アメリカ文学好き。
+              アメリカ文学をよく読みます。
               <br />
               <br />
               漫画もよく読みます。
