@@ -21,7 +21,18 @@
 }
 
 @media (max-width: 600px) {
+  .BasicStance__Top__text__title {
+    font-size: 38px;
+  }
+
   .BasicStance__Top__text__title::before {
-    font-size: 60px;
+    font-size: 42px;
+  }
+
+  .BasicStance__Top__moonrocket img {
+    height: auto;
+    bottom: 10vh;
+    left: 0;
+    width: 80vw;
   }
 }

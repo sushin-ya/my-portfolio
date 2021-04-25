@@ -8,6 +8,7 @@
 
 .BasicStance__Main__text__title {
   padding-top: 12vh;
+  margin-bottom: 10vh;
 }
 
 .BasicStance__Main__text__title::before {
@@ -77,8 +78,47 @@
   }
 }
 
-@media (max-width: 960px) {
-}
-
 @media (max-width: 600px) {
+  .BasicStance__Main__texts {
+    flex-basis: 15% !important;
+  }
+
+  .BasicStance__Main__Inner {
+    height: calc(175vh - 80px);
+    display: flex;
+  }
+
+  .BasicStance__Main__text__title {
+    padding-top: 10vh;
+    font-size: 32px;
+  }
+
+  .BasicStance__Main__text__title::before {
+    content: '01';
+  }
+
+  .BasicStance__Main__text__title h1::after {
+    position: absolute;
+    bottom: -3vh;
+    left: 0;
+  }
+
+  .BasicStance__Main__items {
+    flex-direction: column;
+    flex-basis: 60%;
+  }
+
+  .BasicStance__Main__item__subtitle {
+    margin-top: 2vh;
+    opacity: 0.7;
+    line-height: 2vh;
+  }
+
+  .BasicStance__Main__item__description {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    padding: 0 2vw;
+    opacity: 0.7;
+    line-height: 3vh;
+  }
 }
