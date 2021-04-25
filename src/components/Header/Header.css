@@ -57,4 +57,13 @@
 }
 
 @media (max-width: 600px) {
+  .Header li:nth-child(1) {
+    display: none;
+  }
+  .Header li:nth-child(2) {
+    display: none;
+  }
+  .Header li:nth-child(3) {
+    display: none;
+  }
 }

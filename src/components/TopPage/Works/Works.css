@@ -23,3 +23,22 @@
   left: 20vw;
   transform: rotate(135deg);
 }
+
+@media (max-width: 600px) {
+  .Works__astronaut img {
+    height: 25vh;
+    bottom: 20vh;
+    left: 10vw;
+  }
+  .Works__planet img {
+    height: 18vh;
+    bottom: 5vh;
+    left: 15px;
+  }
+
+  .Works__rocket img {
+    height: 8vh;
+    bottom: 10vh;
+    left: 50vw;
+  }
+}

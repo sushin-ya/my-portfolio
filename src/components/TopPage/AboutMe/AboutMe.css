@@ -15,3 +15,17 @@
   bottom: 15vh;
   left: 30vw;
 }
+
+@media (max-width: 600px) {
+  .AboutMe__astronaut img {
+    height: auto;
+    width: 70vw;
+    bottom: 10vh;
+  }
+
+  .AboutMe__planet img {
+    height: 18vh;
+    bottom: 5vh;
+    left: 40vw;
+  }
+}

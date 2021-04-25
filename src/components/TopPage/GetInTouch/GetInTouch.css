@@ -17,8 +17,9 @@
 }
 
 .GetInTouch__window img {
-  height: 65vh;
   position: absolute;
+  height: auto;
+  width: 40vw;
   bottom: 10vh;
   left: 0;
 }
@@ -40,8 +41,15 @@
   }
 }
 
-@media (max-width: 960px) {
-}
-
 @media (max-width: 600px) {
+  .GetInTouch__window img {
+    height: auto;
+    bottom: 10vh;
+    left: 0;
+    width: 80vw;
+  }
+
+  .GetInTouch__img {
+    flex-basis: 60%;
+  }
 }

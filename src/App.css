@@ -148,12 +148,23 @@ a {
 }
 
 @media (max-width: 600px) {
+  .container__Inner {
+    flex-direction: column-reverse;
+  }
+
+  .container__texts {
+    flex-basis: 40%;
+  }
+
   .container__text__title {
     font-size: 40px;
+    padding-top: 5vh;
   }
 
   .container__text__title::before {
     font-size: 50px;
+    left: 0;
+    bottom: 3vh;
   }
 
   .container__text__title h1::after {
@@ -162,6 +173,7 @@ a {
 
   .container__text__subtitle {
     font-size: 30px;
+    padding-top: 7vh;
   }
 
   .container__text__subtitle > p {
@@ -170,5 +182,16 @@ a {
 
   .container__text__lead {
     font-size: 16px;
+  }
+
+  .container__img {
+    flex-basis: 60%;
+  }
+
+  .container__text__btn {
+    height: 14px;
+    width: 100px;
+    font-size: 12px;
+    margin-top: 5vh;
   }
 }
