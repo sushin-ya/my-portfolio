@@ -16,24 +16,22 @@ export default function WorksMain() {
       <div className='Works__Main container'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Item__img'>
+            <div className='Works__Main__Item__img'>
               <img src={newPortfolio} alt='' />
             </div>
-            <div className='Works__Item__text'>
-              <div className='Works__Item__text__title'>
+            <div className='Works__Main__Item__text'>
+              <div className='Works__Main__Item__text__title'>
                 tsuka-ryu PORTFOLIO
               </div>
-              <div className='Works__Item__text__description'>
-                本サイトです。
-                <br />
-                デザインから実装まですべて作成しました。
+              <div className='Works__Main__Item__text__description'>
+                本サイトです。 デザインから実装まですべて作成しました。
               </div>
-              <div className='Works__Item__text__skills'>
+              <div className='Works__Main__Item__text__skills'>
                 HTML/CSS/React/GSAP/Swiper.js/Parallax.js
               </div>
               <a href='#/'>
                 <img
-                  className='Works__Item__text__github'
+                  className='Works__Main__Item__text__github'
                   src={github}
                   alt=''
                 />
@@ -45,23 +43,24 @@ export default function WorksMain() {
       <div className='Works__Main container'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Item__img'>
+            <div className='Works__Main__Item__img'>
               <img src={cinemas} alt='' />
             </div>
-            <div className='Works__Item__text'>
-              <div className='Works__Item__text__title'>CINEMA&apos;S</div>
-              <div className='Works__Item__text__description'>
-                映画人間のためのレビューサイトをコンセプトとして、
+            <div className='Works__Main__Item__text'>
+              <div className='Works__Main__Item__text__title'>
+                CINEMA&apos;S
+              </div>
+              <div className='Works__Main__Item__text__description'>
+                映画人間のためのレビューサイトをコンセプトとして、Railsの練習のために作成しました。
                 <br />
-                Railsの練習のために作成しました。
                 <span>※デプロイはしていません。</span>
               </div>
-              <div className='Works__Item__text__skills'>
+              <div className='Works__Main__Item__text__skills'>
                 HTML/CSS/Slim/Ruby on Rails
               </div>
               <a href='#/'>
                 <img
-                  className='Works__Item__text__github'
+                  className='Works__Main__Item__text__github'
                   src={github}
                   alt=''
                 />
@@ -73,24 +72,22 @@ export default function WorksMain() {
       <div className='Works__Main container'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Item__img'>
+            <div className='Works__Main__Item__img'>
               <img src={oldPortfolio} alt='' />
             </div>
-            <div className='Works__Item__text'>
-              <div className='Works__Item__text__title'>
+            <div className='Works__Main__Item__text'>
+              <div className='Works__Main__Item__text__title'>
                 <span>旧</span>ポートフォリオ
               </div>
-              <div className='Works__Item__text__description'>
-                初めて作った自己紹介ページです。
-                <br />
-                Reactナニモワカラナイのときに勢いで作りました。
+              <div className='Works__Main__Item__text__description'>
+                初めて作った自己紹介ページです。Reactナニモワカラナイのときに勢いで作りました。
               </div>
-              <div className='Works__Item__text__skills'>
+              <div className='Works__Main__Item__text__skills'>
                 HTML/CSS/React/Gatsby/responsive web design
               </div>
               <a href='#/'>
                 <img
-                  className='Works__Item__text__github'
+                  className='Works__Main__Item__text__github'
                   src={github}
                   alt=''
                 />

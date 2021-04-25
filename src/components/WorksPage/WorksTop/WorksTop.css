@@ -4,11 +4,26 @@
   font-size: 90px;
 }
 
-.Works__Top__moonrocket img {
-  height: 80vh;
+.Works__astronaut img {
+  height: 50vh;
   position: absolute;
-  bottom: 10vh;
+  bottom: 25vh;
   left: 0;
+}
+
+.Works__planet img {
+  height: 25vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+}
+
+.Works__rocket img {
+  height: 10vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 20vw;
+  transform: rotate(135deg);
 }
 
 @media (max-width: 1280px) {
@@ -23,5 +38,22 @@
 @media (max-width: 600px) {
   .Works__Top__text__title::before {
     font-size: 60px;
+  }
+
+  .Works__astronaut img {
+    height: 25vh;
+    bottom: 20vh;
+    left: 10vw;
+  }
+  .Works__planet img {
+    height: 18vh;
+    bottom: 5vh;
+    left: 15px;
+  }
+
+  .Works__rocket img {
+    height: 8vh;
+    bottom: 10vh;
+    left: 50vw;
   }
 }

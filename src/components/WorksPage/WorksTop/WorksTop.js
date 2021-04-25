@@ -1,7 +1,9 @@
 import React from 'react';
 import './WorksTop.css';
 
-import moonrocket from '../../../images/TopPage/basicstancesvg/moonrocket.svg';
+import astronaut from '../../../images/TopPage/workssvg/astronaut.svg';
+import rocket from '../../../images/TopPage/workssvg/rocket.svg';
+import planet from '../../../images/TopPage/workssvg/planet.svg';
 
 export default function WorksTop() {
   return (
@@ -19,9 +21,15 @@ export default function WorksTop() {
             <p>PORTFOLIO</p>
           </div>
         </div>
-        <div className='Works__Top__img container__img'>
-          <div className='Works__Top__moonrocket'>
-            <img src={moonrocket} alt='' />
+        <div className='Works__img container__img'>
+          <div className='Works__planet'>
+            <img src={planet} alt='' />
+          </div>
+          <div className='Works__rocket'>
+            <img src={rocket} alt='' />
+          </div>
+          <div className='Works__astronaut'>
+            <img src={astronaut} alt='' />
           </div>
         </div>
       </div>
