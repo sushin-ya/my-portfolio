@@ -1,4 +1,4 @@
-ul {
+.Header ul {
   display: flex;
   align-items: top;
   padding: 0;
@@ -6,13 +6,8 @@ ul {
   list-style: none;
 }
 
-li {
+.Header li {
   margin-left: 40px;
-}
-a {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none !important;
 }
 
 .Header {
@@ -38,16 +33,28 @@ a {
   align-items: center;
 }
 
-.twitter {
+.Header__twitter {
   height: 25px;
   width: 25px;
 }
 
-.github {
+.Header__github {
   height: 25px;
   width: 25px;
 }
 
-.hamburgerspin {
+.Header__hamburgerspin {
   padding: 0 !important;
+}
+
+@media (max-width: 1280px) {
+  .Header {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 600px) {
 }

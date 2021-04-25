@@ -76,3 +76,23 @@
   left: -2vw;
   font-size: 90px;
 }
+
+@media (max-width: 1280px) {
+  .Works__Item__text__title {
+    font-size: 24px;
+  }
+
+  .Works__Item__text__title > span {
+    font-size: 22px;
+  }
+
+  .Works__Item__text__description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 600px) {
+}

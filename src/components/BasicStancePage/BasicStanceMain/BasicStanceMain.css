@@ -57,3 +57,28 @@
   opacity: 0.7;
   line-height: 4vh;
 }
+
+@media (max-width: 1280px) {
+  .BasicStance__Main__texts {
+    flex-basis: 33% !important;
+  }
+
+  .BasicStance__Main__item__title {
+    font-size: 20px;
+  }
+
+  .BasicStance__Main__item__subtitle {
+    font-size: 12px;
+  }
+
+  .BasicStance__Main__item__description {
+    line-height: 3.5vh;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 600px) {
+}

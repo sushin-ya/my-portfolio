@@ -43,3 +43,30 @@
   text-align: center;
   flex-basis: 30%;
 }
+
+@media (max-width: 1280px) {
+  .Skill__texts {
+    flex-basis: 60% !important;
+  }
+
+  .Skill__text__description {
+    font-size: 16px;
+  }
+
+  .Skill__text__description span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 600px) {
+  .Skill__text__description {
+    font-size: 14px;
+  }
+
+  .Skill__text__description span {
+    font-size: 18px;
+  }
+}

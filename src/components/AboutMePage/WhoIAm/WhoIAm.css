@@ -26,3 +26,26 @@
   letter-spacing: 0.2vw;
   line-height: 5vh;
 }
+
+@media (max-width: 1280px) {
+  .WhoIAm__text__lead {
+    font-size: 30px;
+  }
+
+  .WhoIAm__text__description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+@media (max-width: 600px) {
+  .WhoIAm__text__lead {
+    font-size: 25px;
+  }
+
+  .WhoIAm__text__description {
+    font-size: 14px;
+  }
+}

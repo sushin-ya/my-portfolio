@@ -31,7 +31,7 @@
 }
 
 .Top__backplanet img {
-  height: 40vh;
+  height: 30vh;
   position: absolute;
   bottom: calc(-50vh + 80px);
   left: 25vw;
@@ -41,5 +41,5 @@
   width: 50vw;
   position: absolute;
   bottom: calc(-90vh + 80px);
-  left: 0;
+  left: -3vw;
 }

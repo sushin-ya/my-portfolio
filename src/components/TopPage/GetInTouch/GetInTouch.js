@@ -34,7 +34,7 @@ export default function GetInTouch() {
             </div>
           </div>
         </div>
-        <div className='GetInTouch__img'>
+        <div className='GetInTouch__img container__img'>
           <div className='GetInTouch__window'>
             <img src={window} alt='' />
           </div>
