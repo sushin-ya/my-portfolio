@@ -168,12 +168,12 @@ a {
   }
 
   .container__text__title h1::after {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .container__text__subtitle {
     font-size: 30px;
-    padding-top: 7vh;
+    padding-top: 4vh;
   }
 
   .container__text__subtitle > p {

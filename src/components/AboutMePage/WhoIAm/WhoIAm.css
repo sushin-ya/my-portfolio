@@ -47,5 +47,7 @@
 
   .WhoIAm__text__description {
     font-size: 14px;
+    letter-spacing: 0.1vw;
+    line-height: 4vh;
   }
 }

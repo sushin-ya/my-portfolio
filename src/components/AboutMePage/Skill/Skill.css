@@ -58,15 +58,27 @@
   }
 }
 
-@media (max-width: 960px) {
-}
-
 @media (max-width: 600px) {
+  .Skill__Inner {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   .Skill__text__description {
     font-size: 14px;
+    letter-spacing: 0vw;
+    line-height: 4vh;
   }
 
   .Skill__text__description span {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .Skill__icons {
+    flex-basis: 30%;
+  }
+
+  .Skill__icons__item img {
+    height: 50px;
   }
 }

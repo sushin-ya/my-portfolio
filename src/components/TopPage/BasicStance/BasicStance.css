@@ -10,6 +10,9 @@
 }
 
 @media (max-width: 600px) {
+  .BasicStance__text__title {
+    font-size: 35px;
+  }
   .BasicStance__moonrocket img {
     height: auto;
     bottom: 10vh;
