@@ -12,7 +12,7 @@
 .Top__moonface img {
   width: 45vw;
   position: absolute;
-  bottom: calc(-100vh + 80px);
+  bottom: calc(-95vh + 80px);
   left: 0;
 }
 
@@ -47,38 +47,38 @@
 @media (max-width: 600px) {
   .Top__astronaut img {
     height: 22vh;
-    bottom: calc(-51vh + 80px);
+    bottom: calc(-61vh + 80px);
     left: 50vw;
   }
 
   .Top__moonface img {
     width: 80vw;
-    bottom: calc(-53vh + 80px);
+    bottom: calc(-63vh + 80px);
     left: 5vw;
   }
 
   .Top__rocket img {
     height: 27vh;
-    bottom: calc(-52vh + 80px);
+    bottom: calc(-62vh + 80px);
     left: 15vw;
   }
 
   .Top__planet img {
     height: 10vh;
-    bottom: calc(-36vh + 80px);
+    bottom: calc(-46vh + 80px);
     left: 6vw;
   }
 
   .Top__backplanet img {
     height: 23vh;
     position: absolute;
-    bottom: calc(-35vh + 80px);
+    bottom: calc(-45vh + 80px);
     left: 38vw;
   }
 
   .Top__background img {
     width: 52vw;
-    bottom: calc(-55vh + 80px);
+    bottom: calc(-65vh + 80px);
     left: 20vw;
   }
 }
