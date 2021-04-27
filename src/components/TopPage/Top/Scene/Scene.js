@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import './Scene.css';
 
 import Parallax from 'parallax-js';
@@ -17,8 +18,59 @@ export default function Scene() {
     const parallaxInstance = new Parallax(scene);
   }, []);
 
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    let tl = gsap.timeline({
+      delay: 1,
+      scrollTrigger: {
+        trigger: '.Top',
+        toggleActions: 'restart none restart none',
+      },
+      defaults: { duration: 1, ease: 'circ' },
+    });
+    const fromVars = { opacity: 0, y: -500 };
+    const toVars = { opacity: 1, y: 0 };
+
+    tl.fromTo(element.querySelector('.Top__planet > img'), fromVars, toVars)
+      .fromTo(
+        element.querySelector('.Top__backplanet > img'),
+        fromVars,
+        toVars,
+        '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Top__rocket > img'),
+        fromVars,
+        toVars,
+        '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Top__astronaut > img'),
+        fromVars,
+        toVars,
+        '-=0.9'
+      )
+      .to(element.querySelector('.Top__astronaut > img'), {
+        keyframes: [
+          { y: -100, duration: 0.4, ease: 'power1' },
+          { y: 0, duration: 0.3, delay: 0.1 },
+        ],
+      })
+      .to(
+        '.Top__backplanet > img',
+        10,
+        {
+          rotation: 360,
+          repeat: -1,
+          ease: 'none',
+        },
+        '-=0.5'
+      );
+  }, []);
+
   return (
-    <div data-relative-input='true' id='scene'>
+    <div data-relative-input='true' id='scene' ref={ref}>
       <div data-depth='0.1' className='Top__background'>
         <img src={background} alt='' />
       </div>

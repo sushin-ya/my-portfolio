@@ -12,9 +12,8 @@ import GetInTouch from './GetInTouch/GetInTouch';
 export default function TopPage() {
   gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.defaults({
-    toggleActions: 'restart none restart none',
-    markers: true,
     scroller: '.TopPage',
+    // markers: true,
   });
 
   return (

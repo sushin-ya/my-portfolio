@@ -8,15 +8,16 @@ export default function Top() {
   const ref = useRef(null);
   useEffect(() => {
     const element = ref.current;
-    let tl = gsap.timeline({ delay: 0.2 });
+    let tl = gsap.timeline({
+      delay: 0,
+      scrollTrigger: {
+        trigger: '.Top',
+        toggleActions: 'restart none restart none',
+      },
+      defaults: { duration: 1, ease: 'power3.inOut' },
+    });
     const fromVars = { opacity: 0, x: -100 };
-    const toVars = {
-      opacity: 1,
-      x: 0,
-      scrollTrigger: '.Top',
-      duration: 1,
-      ease: 'power3.inOut',
-    };
+    const toVars = { opacity: 1, x: 0 };
 
     tl.fromTo(element.querySelector('.Top__text__title'), fromVars, toVars)
       .fromTo(
