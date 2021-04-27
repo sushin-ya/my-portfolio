@@ -1,5 +1,7 @@
 import React from 'react';
 import './TopPage.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Top from './Top/Top';
 import AboutMe from './AboutMe/AboutMe';
@@ -8,6 +10,13 @@ import Works from './Works/Works';
 import GetInTouch from './GetInTouch/GetInTouch';
 
 export default function TopPage() {
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+    toggleActions: 'restart none restart none',
+    markers: true,
+    scroller: '.TopPage',
+  });
+
   return (
     <div className='TopPage scroll-snapping'>
       <Top />

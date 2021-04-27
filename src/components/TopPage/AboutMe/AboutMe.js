@@ -1,13 +1,23 @@
-import React from 'react';
-import './AboutMe.css';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import './AboutMe.css';
 
 import astronaut from '../../../images/TopPage/aboutmesvg/astronaut.svg';
 import planet from '../../../images/TopPage/aboutmesvg/planet.svg';
 
 export default function AboutMe() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    gsap.fromTo(
+      element.querySelector('.AboutMe__text__title'),
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, scrollTrigger: '.AboutMe', duration: 1 }
+    );
+  }, []);
   return (
-    <div className='AboutMe container'>
+    <div className='AboutMe container' ref={ref}>
       <div className='AboutMe__Inner container__Inner'>
         <div className='AboutMe__texts container__texts'>
           <div className='AboutMe__text__title container__text__title'>

@@ -1,11 +1,40 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import './Top.css';
 
 import Scene from './Scene/Scene';
 
 export default function Top() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    let tl = gsap.timeline({ delay: 0.2 });
+    const fromVars = { opacity: 0, x: -100 };
+    const toVars = {
+      opacity: 1,
+      x: 0,
+      scrollTrigger: '.Top',
+      duration: 1,
+      ease: 'power3.inOut',
+    };
+
+    tl.fromTo(element.querySelector('.Top__text__title'), fromVars, toVars)
+      .fromTo(
+        element.querySelector('.Top__text__lead'),
+        fromVars,
+        toVars,
+        '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Top__text__subtitle'),
+        fromVars,
+        toVars,
+        '-=0.8'
+      );
+  }, []);
+
   return (
-    <div className='Top container'>
+    <div className='Top container' ref={ref}>
       <div className='Top__Inner container__Inner'>
         <div className='Top__texts container__texts'>
           <div className='Top__text__title container__text__title'>
