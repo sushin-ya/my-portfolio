@@ -37,13 +37,13 @@ export default function AboutMe() {
       .fromTo(
         element.querySelector('.AboutMe__astronaut > img'),
         { opacity: 0, y: -500 },
-        { opacity: 1, y: 0, duration: 1.5 },
+        { opacity: 1, y: 0, duration: 1 },
         '-=0.8'
       )
       .fromTo(
         element.querySelector('.AboutMe__planet > img'),
         { opacity: 0, y: -500 },
-        { opacity: 1, y: 0, duration: 1.5 },
+        { opacity: 1, y: 0, duration: 1 },
         '-=0.8'
       )
       .to(

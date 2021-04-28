@@ -35,7 +35,7 @@ export default function TopPage() {
     });
 
     return () => {
-      gsap.to(body, 1, {
+      gsap.to(body, {
         opacity: '0',
         pointerEvents: 'none',
         duration: 1,
@@ -45,8 +45,8 @@ export default function TopPage() {
 
   return (
     <>
-      <div className='TopLoadContainer'>
-        <div className='TopLoadScreen' ref={(el) => (screen = el)}></div>
+      <div className='loadContainer'>
+        <div className='loadScreen' ref={(el) => (screen = el)}></div>
       </div>
       <div className='TopPage scroll-snapping' ref={(el) => (body = el)}>
         <Top />
