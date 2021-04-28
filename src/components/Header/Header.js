@@ -5,7 +5,7 @@ import { HamburgerSpin } from 'react-animated-burgers';
 import twitter from '../../images/twitter.svg';
 import github from '../../images/github.svg';
 
-export default function Header() {
+export default function Header({ isActive, menuToggle }) {
   return (
     <header className='Header'>
       <div className='Header__Inner'>
@@ -31,8 +31,8 @@ export default function Header() {
               <HamburgerSpin
                 className='Header__hamburgerspin'
                 barColor='#fff'
-                isActive={false}
-                toggleButton={() => {}}
+                isActive={isActive}
+                toggleButton={menuToggle}
               />
             </a>
           </li>

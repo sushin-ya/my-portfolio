@@ -34,7 +34,7 @@ export default function NewPortfolio() {
               本サイトです。 デザインから実装まですべて作成しました。
             </div>
             <div className='Works__Main__Item__text__skills Works__newPortfolio__skills'>
-              HTML/CSS/React/GSAP/Swiper.js/Parallax.js
+              HTML/CSS/React/GSAP/Parallax.js
             </div>
             <a href='#/'>
               <img
