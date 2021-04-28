@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './AboutMePage.css';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import AboutMeTop from './AboutMeTop/AboutMeTop';
 import Hobby from './Hobby/Hobby';
@@ -8,6 +9,12 @@ import Skill from './Skill/Skill';
 import WhoIAm from './WhoIAm/WhoIAm';
 
 export default function AboutMePage() {
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+    scroller: '.AboutMePage',
+    // markers: true,
+  });
+
   let screen = useRef(null);
   let body = useRef(null);
 

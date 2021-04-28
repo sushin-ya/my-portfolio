@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Hobby.css';
+import { gsap } from 'gsap';
 
 import movie from '../../../images/AboutMePage/icons/movie.svg';
 import book from '../../../images/AboutMePage/icons/book.svg';
@@ -7,8 +8,36 @@ import sake from '../../../images/AboutMePage/icons/sake.svg';
 import bath from '../../../images/AboutMePage/icons/bath.svg';
 
 export default function Hobby() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    let tl = gsap.timeline({
+      delay: 0,
+      scrollTrigger: {
+        trigger: '.Hobby',
+        toggleActions: 'restart none restart none',
+      },
+      defaults: { duration: 1, ease: 'power3.inOut' },
+    });
+    const fromVars = { opacity: 0, x: -100 };
+    const toVars = { opacity: 1, x: 0 };
+
+    tl.fromTo(element.querySelector('.Hobby__text__title'), fromVars, toVars)
+      .fromTo(
+        element.querySelector('.Hobby__text__description'),
+        fromVars,
+        toVars,
+        '-=0.7'
+      )
+      .fromTo(
+        element.querySelector('.Hobby__items'),
+        { opacity: 0 },
+        { opacity: 1 },
+        '-=0.7'
+      );
+  });
   return (
-    <div className='Hobby container'>
+    <div className='Hobby container' ref={ref}>
       <div className='Hobby__Inner container__Inner'>
         <div className='Hobby__texts container__texts'>
           <div className='Hobby__text__title container__text__title'>
