@@ -35,6 +35,13 @@
   margin-left: 2vw;
 }
 
+.GetInTouch__text__thanks {
+  margin-top: 5vh;
+  font-size: 28px;
+  font-family: 'Orbitron';
+  color: #ff6584;
+}
+
 @media (max-width: 1280px) {
   .GetInTouch__text__link {
     font-size: 20px;
@@ -44,12 +51,17 @@
 @media (max-width: 600px) {
   .GetInTouch__window img {
     height: auto;
-    bottom: 10vh;
+    bottom: 5vh;
     left: 0;
     width: 80vw;
   }
 
-  .GetInTouch__img {
-    flex-basis: 60%;
+  .GetInTouch__text__linkitem {
+    padding-top: 3vh;
+  }
+
+  .GetInTouch__text__thanks {
+    margin-top: 3vh;
+    font-size: 20px;
   }
 }

@@ -45,6 +45,9 @@ export default function GetInTouch() {
                 <img className='GetInTouch__github' src={github} alt='' />
               </a>
             </div>
+            <div className='GetInTouch__text__thanks'>
+              <h1>Thank you for visiting!</h1>
+            </div>
           </div>
         </div>
         <div className='GetInTouch__img container__img'>
