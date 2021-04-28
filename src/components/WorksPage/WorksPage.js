@@ -4,39 +4,19 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import WorksTop from './WorksTop/WorksTop';
 import WorksMain from './WorksMain/WorksMain';
+import PageTransition from '../../app/PageTransition';
 
 export default function WorksPage() {
   gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.defaults({
     scroller: '.WorksPage',
-    // markers: true,
   });
 
   let screen = useRef(null);
   let body = useRef(null);
 
   useEffect(() => {
-    let tl = gsap.timeline({});
-    tl.to(screen, {
-      duration: 1,
-      left: '100%',
-      ease: 'power3',
-      delay: 0.3,
-    }).set(screen, { left: '-100%' });
-
-    gsap.to(body, {
-      opacity: '1',
-      pointerEvents: 'auto',
-      delay: 2,
-    });
-
-    return () => {
-      gsap.to(body, {
-        opacity: '0',
-        pointerEvents: 'none',
-        duration: 1,
-      });
-    };
+    PageTransition(screen, body);
   }, []);
   return (
     <>
