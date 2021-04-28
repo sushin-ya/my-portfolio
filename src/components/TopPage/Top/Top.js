@@ -16,7 +16,7 @@ export default function Top() {
   }, []);
 
   return (
-    <div className='Top container' ref={ref}>
+    <div id='top' className='Top container' ref={ref}>
       <div className='Top__Inner container__Inner'>
         <div className='Top__texts container__texts'>
           <div className='Top__text__title container__text__title'>

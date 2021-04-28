@@ -8,6 +8,8 @@ import Hobby from './Hobby/Hobby';
 import Skill from './Skill/Skill';
 import WhoIAm from './WhoIAm/WhoIAm';
 import pageTransition from '../../app/pageTransition';
+import arrow from '../../images/arrow.svg';
+import { Link } from 'react-router-dom';
 
 export default function AboutMePage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -25,6 +27,11 @@ export default function AboutMePage() {
     <>
       <div className='loadContainer'>
         <div className='loadScreen' ref={(el) => (screen = el)}></div>
+      </div>
+      <div className='backArrow'>
+        <Link to={{ pathname: '/', hash: '#aboutme' }}>
+          <img src={arrow} alt='' />
+        </Link>
       </div>
       <div className='AboutMePage scroll-snapping' ref={(el) => (body = el)}>
         <AboutMeTop />

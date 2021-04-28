@@ -20,7 +20,7 @@ export default function GetInTouch() {
     opacityAnimation(element, tl, '.GetInTouch__window > img');
   });
   return (
-    <div className='GetInTouch container' ref={ref}>
+    <div id='getintouch' className='GetInTouch container' ref={ref}>
       <div className='GetInTouch__Inner container__Inner'>
         <div className='GetInTouch__texts container__texts'>
           <div className='GetInTouch__text__title container__text__title'>

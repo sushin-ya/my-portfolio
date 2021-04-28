@@ -32,7 +32,7 @@ export default function Works() {
     );
   }, []);
   return (
-    <div className='Works container' ref={ref}>
+    <div id='works' className='Works container' ref={ref}>
       <div className='Works__Inner container__Inner'>
         <div className='Works__texts container__texts'>
           <div className='Works__text__title container__text__title'>

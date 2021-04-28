@@ -17,7 +17,7 @@ export default function BasicStance() {
     opacityAnimation(element, tl, '.BasicStance__moonrocket > img');
   });
   return (
-    <div className='BasicStance container' ref={ref}>
+    <div id='basicstance' className='BasicStance container' ref={ref}>
       <div className='BasicStance__Inner container__Inner'>
         <div className='BasicStance__texts container__texts'>
           <div className='BasicStance__text__title container__text__title'>

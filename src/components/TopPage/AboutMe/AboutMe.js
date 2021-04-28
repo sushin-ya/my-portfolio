@@ -38,7 +38,7 @@ export default function AboutMe() {
     );
   }, []);
   return (
-    <div className='AboutMe container' ref={ref}>
+    <div id='aboutme' className='AboutMe container' ref={ref}>
       <div className='AboutMe__Inner container__Inner'>
         <div className='AboutMe__texts container__texts'>
           <div className='AboutMe__text__title container__text__title'>
