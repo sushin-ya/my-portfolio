@@ -6,10 +6,7 @@ import astronaut from '../../../images/TopPage/workssvg/astronaut.svg';
 import rocket from '../../../images/TopPage/workssvg/rocket.svg';
 import planet from '../../../images/TopPage/workssvg/planet.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import {
-  imgAnimation,
-  slideTextAnimation,
-} from '../../../app/TopPageAnimation';
+import { imgAnimation, slideTextAnimation } from '../../../app/animations';
 
 export default function Works() {
   const ref = useRef(null);

@@ -3,7 +3,7 @@ import './Top.css';
 
 import Scene from './Scene/Scene';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import { slideTextAnimation } from '../../../app/TopPageAnimation';
+import { slideTextAnimation } from '../../../app/animations';
 
 export default function Top() {
   const ref = useRef(null);

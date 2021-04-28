@@ -5,7 +5,7 @@ import window from '../../../images/TopPage/getintouchsvg/window.svg';
 import twitter from '../../../images/twitter.svg';
 import github from '../../../images/github.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import { slideTextAnimation } from '../../../app/TopPageAnimation';
+import { slideTextAnimation } from '../../../app/animations';
 
 export default function GetInTouch() {
   const ref = useRef(null);

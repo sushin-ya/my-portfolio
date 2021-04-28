@@ -5,10 +5,7 @@ import './AboutMe.css';
 import astronaut from '../../../images/TopPage/aboutmesvg/astronaut.svg';
 import planet from '../../../images/TopPage/aboutmesvg/planet.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import {
-  imgAnimation,
-  slideTextAnimation,
-} from '../../../app/TopPageAnimation';
+import { imgAnimation, slideTextAnimation } from '../../../app/animations';
 
 export default function AboutMe() {
   const ref = useRef(null);

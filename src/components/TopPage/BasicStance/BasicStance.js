@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import moonrocket from '../../../images/TopPage/basicstancesvg/moonrocket.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import { slideTextAnimation } from '../../../app/TopPageAnimation';
+import { slideTextAnimation } from '../../../app/animations';
 
 export default function BasicStance() {
   const ref = useRef(null);
