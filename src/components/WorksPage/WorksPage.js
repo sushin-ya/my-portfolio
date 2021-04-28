@@ -1,10 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import WorksTop from './WorksTop/WorksTop';
 import WorksMain from './WorksMain/WorksMain';
 
 export default function WorksPage() {
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+    scroller: '.WorksPage',
+    // markers: true,
+  });
+
   let screen = useRef(null);
   let body = useRef(null);
 
