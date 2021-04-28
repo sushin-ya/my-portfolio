@@ -58,12 +58,12 @@ export default function Scene() {
         ],
       })
       .to(
-        '.Top__backplanet > img',
-        10,
+        element.querySelector('.Top__backplanet > img'),
         {
           rotation: 360,
           repeat: -1,
           ease: 'none',
+          duration: 10,
         },
         '-=0.5'
       );
