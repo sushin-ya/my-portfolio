@@ -14,7 +14,9 @@ export default function BasicStanceMain() {
     let tl = slideAnimationInit({ trigger: '.BasicStance__Main' });
 
     slideTextAnimation(element, tl, '.BasicStance__Main__text__title');
-    opacityAnimation(element, tl, '.BasicStance__Main__items');
+    opacityAnimation(element, tl, '.BasicStance__Main__item__technology');
+    opacityAnimation(element, tl, '.BasicStance__Main__item__design');
+    opacityAnimation(element, tl, '.BasicStance__Main__item__culture');
   });
   return (
     <div className='BasicStance__Main container' ref={ref}>
@@ -25,7 +27,7 @@ export default function BasicStanceMain() {
           </div>
         </div>
         <div className='BasicStance__Main__items'>
-          <div className='BasicStance__Main__item'>
+          <div className='BasicStance__Main__item BasicStance__Main__item__technology'>
             <img src={devices} alt='' />
             <h1 className='BasicStance__Main__item__title'>technology</h1>
             <p className='BasicStance__Main__item__subtitle'>
@@ -37,7 +39,7 @@ export default function BasicStanceMain() {
               SF作家のアーサー・C・クラークは「十分に高度なテクノロジーは、魔法と区別することができない」という名言を残していますが、テクノロジーは、世界や個人に対して計り知れない影響力を持っていると思っています。魔法使いの弟子として、常に最新の技術のキャッチアップを行い、イノベーションにコミットしていきたいです。
             </p>
           </div>
-          <div className='BasicStance__Main__item'>
+          <div className='BasicStance__Main__item BasicStance__Main__item__design'>
             <img src={palette} alt='' />
             <h1 className='BasicStance__Main__item__title'>design</h1>
             <p className='BasicStance__Main__item__subtitle'>
@@ -49,7 +51,7 @@ export default function BasicStanceMain() {
               「デザインとは単にどのように見えるか、どのように感じるかということではない。どう機能するかだ」というジョブスの言葉にあるように、デザインはアートとは違い、アプリケーションをひとつの体験と捉えたときにその大部分を占める機能だと考えています。そのためデザインについても、より効果的な方法について学んでいきたいです。
             </p>
           </div>
-          <div className='BasicStance__Main__item'>
+          <div className='BasicStance__Main__item BasicStance__Main__item__culture'>
             <img src={human} alt='' />
             <h1 className='BasicStance__Main__item__title'>culture</h1>
             <p className='BasicStance__Main__item__subtitle'>
