@@ -1,37 +1,18 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
 import './Top.css';
 
 import Scene from './Scene/Scene';
+import slideAnimationInit from '../../../app/slideAnimationInit';
+import { slideTextAnimation } from '../../../app/TopPageAnimation';
 
 export default function Top() {
   const ref = useRef(null);
   useEffect(() => {
     const element = ref.current;
-    let tl = gsap.timeline({
-      delay: 2,
-      scrollTrigger: {
-        trigger: '.Top',
-        toggleActions: 'restart none restart none',
-      },
-      defaults: { duration: 1, ease: 'power3.inOut' },
-    });
-    const fromVars = { opacity: 0, x: -100 };
-    const toVars = { opacity: 1, x: 0 };
-
-    tl.fromTo(element.querySelector('.Top__text__title'), fromVars, toVars)
-      .fromTo(
-        element.querySelector('.Top__text__lead'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.Top__text__subtitle'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      );
+    let tl = slideAnimationInit({ trigger: '.Top' });
+    slideTextAnimation(element, tl, '.Top__text__title', '-=0.2');
+    slideTextAnimation(element, tl, '.Top__text__lead');
+    slideTextAnimation(element, tl, '.Top__text__subtitle');
   }, []);
 
   return (

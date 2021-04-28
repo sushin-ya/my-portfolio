@@ -8,7 +8,7 @@ import AboutMe from './AboutMe/AboutMe';
 import BasicStance from './BasicStance/BasicStance';
 import Works from './Works/Works';
 import GetInTouch from './GetInTouch/GetInTouch';
-import PageTransition from '../../app/PageTransition';
+import pageTransition from '../../app/pageTransition';
 
 export default function TopPage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +19,7 @@ export default function TopPage() {
   let screen = useRef(null);
   let body = useRef(null);
   useEffect(() => {
-    PageTransition(screen, body);
+    pageTransition(screen, body);
   }, []);
 
   return (

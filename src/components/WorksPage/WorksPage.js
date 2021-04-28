@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import WorksTop from './WorksTop/WorksTop';
 import WorksMain from './WorksMain/WorksMain';
-import PageTransition from '../../app/PageTransition';
+import pageTransition from '../../app/pageTransition';
 
 export default function WorksPage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +16,7 @@ export default function WorksPage() {
   let body = useRef(null);
 
   useEffect(() => {
-    PageTransition(screen, body);
+    pageTransition(screen, body);
   }, []);
   return (
     <>

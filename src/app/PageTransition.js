@@ -1,6 +1,6 @@
 import { gsap } from 'gsap';
 
-export default function PageTransition(screen, body) {
+export default function pageTransition(screen, body) {
   let tl = gsap.timeline({});
   tl.to(screen, {
     duration: 1,

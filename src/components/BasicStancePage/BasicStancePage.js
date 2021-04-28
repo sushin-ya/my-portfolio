@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import BasicStanceTop from './BasicStanceTop/BasicStanceTop';
 import BasicStanceMain from './BasicStanceMain/BasicStanceMain';
-import PageTransition from '../../app/PageTransition';
+import pageTransition from '../../app/pageTransition';
 
 export default function BasicStancePage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +16,7 @@ export default function BasicStancePage() {
   let body = useRef(null);
 
   useEffect(() => {
-    PageTransition(screen, body);
+    pageTransition(screen, body);
   }, []);
   return (
     <>

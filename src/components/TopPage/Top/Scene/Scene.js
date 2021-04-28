@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
 import './Scene.css';
 
 import Parallax from 'parallax-js';
@@ -10,6 +9,7 @@ import backplanet from '../../../../images/TopPage/topsvg/backplanet.svg';
 import moonface from '../../../../images/TopPage/topsvg/moonface.svg';
 import planet from '../../../../images/TopPage/topsvg/planet.svg';
 import rocket from '../../../../images/TopPage/topsvg/rocket.svg';
+import slideAnimationInit from '../../../../app/slideAnimationInit';
 
 export default function Scene() {
   useEffect(() => {
@@ -21,14 +21,7 @@ export default function Scene() {
   const ref = useRef(null);
   useEffect(() => {
     const element = ref.current;
-    let tl = gsap.timeline({
-      delay: 1,
-      scrollTrigger: {
-        trigger: '.Top',
-        toggleActions: 'restart none restart none',
-      },
-      defaults: { duration: 1, ease: 'circ' },
-    });
+    let tl = slideAnimationInit({ trigger: '.Top' });
     const fromVars = { opacity: 0, y: -500 };
     const toVars = { opacity: 1, y: 0 };
 

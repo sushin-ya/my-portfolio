@@ -7,7 +7,7 @@ import AboutMeTop from './AboutMeTop/AboutMeTop';
 import Hobby from './Hobby/Hobby';
 import Skill from './Skill/Skill';
 import WhoIAm from './WhoIAm/WhoIAm';
-import PageTransition from '../../app/PageTransition';
+import pageTransition from '../../app/pageTransition';
 
 export default function AboutMePage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +19,7 @@ export default function AboutMePage() {
   let body = useRef(null);
 
   useEffect(() => {
-    PageTransition(screen, body);
+    pageTransition(screen, body);
   }, []);
   return (
     <>

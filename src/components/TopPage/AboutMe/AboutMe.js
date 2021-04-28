@@ -1,71 +1,44 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
 import './AboutMe.css';
 
 import astronaut from '../../../images/TopPage/aboutmesvg/astronaut.svg';
 import planet from '../../../images/TopPage/aboutmesvg/planet.svg';
+import slideAnimationInit from '../../../app/slideAnimationInit';
+import {
+  imgAnimation,
+  slideTextAnimation,
+} from '../../../app/TopPageAnimation';
 
 export default function AboutMe() {
   const ref = useRef(null);
   useEffect(() => {
     const element = ref.current;
-    let tl = gsap.timeline({
-      delay: 0,
-      scrollTrigger: {
-        trigger: '.AboutMe',
-        toggleActions: 'restart none restart none',
+    let tl = slideAnimationInit({ trigger: '.AboutMe' });
+    slideTextAnimation(element, tl, '.AboutMe__text__title', '-=0.2');
+    slideTextAnimation(element, tl, '.AboutMe__text__lead');
+    slideTextAnimation(element, tl, '.AboutMe__text__btn');
+    imgAnimation(element, tl, '.AboutMe__astronaut > img');
+    imgAnimation(element, tl, '.AboutMe__planet > img');
+    tl.to(
+      element.querySelector('.AboutMe__astronaut > img'),
+      {
+        // y: -20,
+        repeat: -1,
+        yoyoEase: true,
+        duration: 1.5,
       },
-      defaults: { duration: 1, ease: 'power3.inOut' },
-    });
-    const fromVars = { opacity: 0, x: -100 };
-    const toVars = { opacity: 1, x: 0 };
-
-    tl.fromTo(element.querySelector('.AboutMe__text__title'), fromVars, toVars)
-      .fromTo(
-        element.querySelector('.AboutMe__text__lead'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.AboutMe__text__btn'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.AboutMe__astronaut > img'),
-        { opacity: 0, y: -500 },
-        { opacity: 1, y: 0, duration: 1 },
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.AboutMe__planet > img'),
-        { opacity: 0, y: -500 },
-        { opacity: 1, y: 0, duration: 1 },
-        '-=0.8'
-      )
-      .to(
-        element.querySelector('.AboutMe__astronaut > img'),
-        {
-          // y: -20,
-          repeat: -1,
-          yoyoEase: true,
-          duration: 1.5,
-        },
-        '-=0.8'
-      )
-      .to(
-        element.querySelector('.AboutMe__planet > img'),
-        {
-          y: -20,
-          repeat: -1,
-          yoyoEase: true,
-          duration: 1.5,
-        },
-        '-=0.7'
-      );
+      '-=0.8'
+    ).to(
+      element.querySelector('.AboutMe__planet > img'),
+      {
+        y: -20,
+        repeat: -1,
+        yoyoEase: true,
+        duration: 1.5,
+      },
+      '-=0.8'
+    );
   }, []);
   return (
     <div className='AboutMe container' ref={ref}>
