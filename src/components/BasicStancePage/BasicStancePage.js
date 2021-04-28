@@ -1,10 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import BasicStanceTop from './BasicStanceTop/BasicStanceTop';
 import BasicStanceMain from './BasicStanceMain/BasicStanceMain';
 
 export default function BasicStancePage() {
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+    scroller: '.BasicStancePage',
+    // markers: true,
+  });
+
   let screen = useRef(null);
   let body = useRef(null);
 

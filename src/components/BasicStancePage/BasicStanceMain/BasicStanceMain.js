@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './BasicStanceMain.css';
+import { gsap } from 'gsap';
 
 import devices from '../../../images/BasicStancePage/icons/devices.svg';
 import human from '../../../images/BasicStancePage/icons/human.svg';
 import palette from '../../../images/BasicStancePage/icons/palette.svg';
 
 export default function BasicStanceMain() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const element = ref.current;
+    let tl = gsap.timeline({
+      delay: 0,
+      scrollTrigger: {
+        trigger: '.BasicStance__Main',
+        toggleActions: 'restart none restart none',
+      },
+      defaults: { duration: 1, ease: 'power3.inOut' },
+    });
+    const fromVars = { opacity: 0, x: -100 };
+    const toVars = { opacity: 1, x: 0 };
+
+    tl.fromTo(
+      element.querySelector('.BasicStance__Main__text__title'),
+      fromVars,
+      toVars
+    ).fromTo(
+      element.querySelector('.BasicStance__Main__items'),
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5 },
+      '-=0.8'
+    );
+  });
   return (
-    <div className='BasicStance__Main container'>
+    <div className='BasicStance__Main container' ref={ref}>
       <div className='BasicStance__Main__Inner container__Inner'>
         <div className='BasicStance__Main__texts container__texts'>
           <div className='BasicStance__Main__text__title container__text__title'>
