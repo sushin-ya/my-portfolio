@@ -5,7 +5,7 @@ import window from '../../../images/TopPage/getintouchsvg/window.svg';
 import twitter from '../../../images/twitter.svg';
 import github from '../../../images/github.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import { slideTextAnimation } from '../../../app/animations';
+import { opacityAnimation, slideTextAnimation } from '../../../app/animations';
 
 export default function GetInTouch() {
   const ref = useRef(null);
@@ -17,13 +17,7 @@ export default function GetInTouch() {
     slideTextAnimation(element, tl, '.GetInTouch__wantedly');
     slideTextAnimation(element, tl, '.GetInTouch__twitter');
     slideTextAnimation(element, tl, '.GetInTouch__github', '-=1');
-
-    tl.fromTo(
-      element.querySelector('.GetInTouch__window > img'),
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 },
-      '-=0.8'
-    );
+    opacityAnimation(element, tl, '.GetInTouch__window > img');
   });
   return (
     <div className='GetInTouch container' ref={ref}>

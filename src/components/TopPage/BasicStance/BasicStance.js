@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import moonrocket from '../../../images/TopPage/basicstancesvg/moonrocket.svg';
 import slideAnimationInit from '../../../app/slideAnimationInit';
-import { slideTextAnimation } from '../../../app/animations';
+import { opacityAnimation, slideTextAnimation } from '../../../app/animations';
 
 export default function BasicStance() {
   const ref = useRef(null);
@@ -14,12 +14,7 @@ export default function BasicStance() {
     slideTextAnimation(element, tl, '.BasicStance__text__title', '');
     slideTextAnimation(element, tl, '.BasicStance__text__lead');
     slideTextAnimation(element, tl, '.BasicStance__text__btn');
-    tl.fromTo(
-      element.querySelector('.BasicStance__moonrocket > img'),
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 },
-      '-=0.8'
-    );
+    opacityAnimation(element, tl, '.BasicStance__moonrocket > img');
   });
   return (
     <div className='BasicStance container' ref={ref}>

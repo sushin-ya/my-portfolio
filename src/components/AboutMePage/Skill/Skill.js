@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import './Skill.css';
-import { gsap } from 'gsap';
 
 import html from '../../../images/AboutMePage/icons/html.svg';
 import css from '../../../images/AboutMePage/icons/css.svg';
@@ -8,35 +7,28 @@ import javascript from '../../../images/AboutMePage/icons/javascript.svg';
 import react from '../../../images/AboutMePage/icons/react.svg';
 import rails from '../../../images/AboutMePage/icons/rails.svg';
 import cpp from '../../../images/AboutMePage/icons/cpp.svg';
+import { slideTextAnimation } from '../../../app/animations';
+import slideAnimationInit from '../../../app/slideAnimationInit';
 
 export default function Skill() {
   const ref = useRef(null);
   useEffect(() => {
     const element = ref.current;
-    let tl = gsap.timeline({
-      delay: 0,
-      scrollTrigger: {
-        trigger: '.Skill',
-        toggleActions: 'restart none restart none',
-      },
-      defaults: { duration: 1, ease: 'power3.inOut' },
-    });
-    const fromVars = { opacity: 0, x: -100 };
-    const toVars = { opacity: 1, x: 0 };
+    let tl = slideAnimationInit({ trigger: '.Skill' });
 
-    tl.fromTo(element.querySelector('.Skill__text__title'), fromVars, toVars)
-      .fromTo(
-        element.querySelector('.Skill__text__description'),
-        fromVars,
-        toVars,
-        '-=0.7'
-      )
-      .fromTo(
-        element.querySelector('.Skill__icons'),
-        { opacity: 0 },
-        { opacity: 1 },
-        '-=0.7'
-      );
+    slideTextAnimation(element, tl, '.Skill__text__title');
+    tl.fromTo(
+      element.querySelector('.Skill__text__description'),
+      { opacity: 0 },
+      { opacity: 1 },
+      '-=0.6'
+    );
+    tl.fromTo(
+      element.querySelector('.Skill__icons'),
+      { opacity: 0 },
+      { opacity: 1 },
+      '-=0.8'
+    );
   });
   return (
     <div className='Skill container' ref={ref}>

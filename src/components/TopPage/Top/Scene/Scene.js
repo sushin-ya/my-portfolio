@@ -10,6 +10,7 @@ import moonface from '../../../../images/TopPage/topsvg/moonface.svg';
 import planet from '../../../../images/TopPage/topsvg/planet.svg';
 import rocket from '../../../../images/TopPage/topsvg/rocket.svg';
 import slideAnimationInit from '../../../../app/slideAnimationInit';
+import { imgAnimation } from '../../../../app/animations';
 
 export default function Scene() {
   useEffect(() => {
@@ -22,44 +23,27 @@ export default function Scene() {
   useEffect(() => {
     const element = ref.current;
     let tl = slideAnimationInit({ trigger: '.Top' });
-    const fromVars = { opacity: 0, y: -500 };
-    const toVars = { opacity: 1, y: 0 };
+    imgAnimation(element, tl, '.Top__planet > img');
+    imgAnimation(element, tl, '.Top__backplanet > img');
+    imgAnimation(element, tl, '.Top__rocket > img');
+    imgAnimation(element, tl, '.Top__astronaut > img');
 
-    tl.fromTo(element.querySelector('.Top__planet > img'), fromVars, toVars)
-      .fromTo(
-        element.querySelector('.Top__backplanet > img'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.Top__rocket > img'),
-        fromVars,
-        toVars,
-        '-=0.8'
-      )
-      .fromTo(
-        element.querySelector('.Top__astronaut > img'),
-        fromVars,
-        toVars,
-        '-=0.9'
-      )
-      .to(element.querySelector('.Top__astronaut > img'), {
-        keyframes: [
-          { y: -100, duration: 0.4, ease: 'power1' },
-          { y: 0, duration: 0.3, delay: 0.1 },
-        ],
-      })
-      .to(
-        element.querySelector('.Top__backplanet > img'),
-        {
-          rotation: 360,
-          repeat: -1,
-          ease: 'none',
-          duration: 10,
-        },
-        '-=0.5'
-      );
+    tl.to(element.querySelector('.Top__astronaut > img'), {
+      keyframes: [
+        { y: -100, duration: 0.4, ease: 'power1' },
+        { y: 0, duration: 0.3, delay: 0.1 },
+      ],
+      repeat: 1,
+    }).to(
+      element.querySelector('.Top__backplanet > img'),
+      {
+        rotation: 360,
+        repeat: -1,
+        ease: 'none',
+        duration: 10,
+      },
+      '-=0.5'
+    );
   }, []);
 
   return (
