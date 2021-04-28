@@ -9,7 +9,7 @@ export default function Top() {
   useEffect(() => {
     const element = ref.current;
     let tl = gsap.timeline({
-      delay: 0,
+      delay: 2,
       scrollTrigger: {
         trigger: '.Top',
         toggleActions: 'restart none restart none',
