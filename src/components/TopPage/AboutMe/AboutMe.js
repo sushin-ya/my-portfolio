@@ -49,7 +49,7 @@ export default function AboutMe() {
       .to(
         element.querySelector('.AboutMe__astronaut > img'),
         {
-          y: -20,
+          // y: -20,
           repeat: -1,
           yoyoEase: true,
           duration: 1.5,
