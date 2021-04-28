@@ -45,6 +45,12 @@ export default function WorksMain() {
         fromVars,
         toVars,
         '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Works__newPortfolio__img > img'),
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0 },
+        '-=0.8'
       );
   }, []);
   useEffect(() => {
@@ -77,6 +83,12 @@ export default function WorksMain() {
         element.querySelector('.Works__cinemas__github'),
         fromVars,
         toVars,
+        '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Works__cinemas__img > img'),
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0 },
         '-=0.8'
       );
   }, []);
@@ -115,6 +127,12 @@ export default function WorksMain() {
         fromVars,
         toVars,
         '-=0.8'
+      )
+      .fromTo(
+        element.querySelector('.Works__oldPortfolio__img > img'),
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0 },
+        '-=0.8'
       );
   }, []);
   return (
@@ -125,7 +143,7 @@ export default function WorksMain() {
       <div className='Works__Main container Works__newPortfolio'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Main__Item__img'>
+            <div className='Works__Main__Item__img Works__newPortfolio__img'>
               <img src={newPortfolio} alt='' />
             </div>
             <div className='Works__Main__Item__text'>
@@ -152,7 +170,7 @@ export default function WorksMain() {
       <div className='Works__Main container Works__cinemas'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Main__Item__img'>
+            <div className='Works__Main__Item__img Works__cinemas__img'>
               <img src={cinemas} alt='' />
             </div>
             <div className='Works__Main__Item__text'>
@@ -181,7 +199,7 @@ export default function WorksMain() {
       <div className='Works__Main container Works__oldPortfolio'>
         <div className='Works__Main__Inner container__Inner'>
           <div className='Works__Main__Item'>
-            <div className='Works__Main__Item__img'>
+            <div className='Works__Main__Item__img Works__oldPortfolio__img'>
               <img src={oldPortfolio} alt='' />
             </div>
             <div className='Works__Main__Item__text'>
