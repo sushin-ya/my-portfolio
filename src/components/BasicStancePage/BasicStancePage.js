@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import BasicStanceTop from './BasicStanceTop/BasicStanceTop';
 import BasicStanceMain from './BasicStanceMain/BasicStanceMain';
 import pageTransition from '../../app/pageTransition';
+import { HashLink } from 'react-router-hash-link';
+import arrow from '../../images/arrow.svg';
 
 export default function BasicStancePage() {
   gsap.registerPlugin(ScrollTrigger);
@@ -22,6 +24,11 @@ export default function BasicStancePage() {
     <>
       <div className='loadContainer'>
         <div className='loadScreen' ref={(el) => (screen = el)}></div>
+      </div>
+      <div className='backArrow'>
+        <HashLink to='/#basicstance'>
+          <img src={arrow} alt='' />
+        </HashLink>
       </div>
       <div
         className='BasicStancePage  scroll-snapping'
