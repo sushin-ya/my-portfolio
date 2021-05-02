@@ -49,6 +49,10 @@
 }
 
 @media (max-width: 600px) {
+  .GetInTouch__img {
+    flex-basis: 40%;
+  }
+
   .GetInTouch__window img {
     height: auto;
     bottom: 5vh;

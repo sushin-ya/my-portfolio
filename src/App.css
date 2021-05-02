@@ -202,6 +202,7 @@ a {
 @media (max-width: 600px) {
   .container__Inner {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .container__texts {
@@ -237,7 +238,7 @@ a {
   }
 
   .container__img {
-    flex-basis: 60%;
+    flex-basis: 40%;
   }
 
   .container__text__btn {
