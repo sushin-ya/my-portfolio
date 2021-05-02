@@ -14,27 +14,39 @@ export default function Header({ isActive, menuToggle }) {
         </div>
         <ul>
           <li>
-            <a href='#/'>
+            <a
+              href='https://twitter.com/tsuka_ryu'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               <img className='Header__twitter' src={twitter} alt='' />
             </a>
           </li>
           <li>
-            <a href='#/'>
+            <a
+              href='https://github.com/tsuka-ryu'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               <img className='Header__github' src={github} alt='' />
             </a>
           </li>
           <li>
-            <a href='#/'>Wantedly</a>
+            <a
+              href='https://www.wantedly.com/id/otsuka_ryutaro'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Wantedly
+            </a>
           </li>
           <li>
-            <a href='#/'>
-              <HamburgerSpin
-                className='Header__hamburgerspin'
-                barColor='#fff'
-                isActive={isActive}
-                toggleButton={menuToggle}
-              />
-            </a>
+            <HamburgerSpin
+              className='Header__hamburgerspin'
+              barColor='#fff'
+              isActive={isActive}
+              toggleButton={menuToggle}
+            />
           </li>
         </ul>
       </div>

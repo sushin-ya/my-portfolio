@@ -38,7 +38,11 @@ export default function Cinemas() {
             <div className='Works__Main__Item__text__skills Works__cinemas__skills'>
               HTML/CSS/Slim/Ruby on Rails
             </div>
-            <a href='#/'>
+            <a
+              href='https://github.com/tsuka-ryu/cineman_app'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               <img
                 className='Works__Main__Item__text__github Works__cinemas__github'
                 src={github}

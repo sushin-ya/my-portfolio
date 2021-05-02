@@ -28,20 +28,33 @@ export default function GetInTouch() {
           </div>
           <div className='GetInTouch__text__link'>
             <div className='GetInTouch__text__linkitem'>
-              <a href='#/' alt=''>
+              <a href='mailto:drgon8otsuka@gmail.com' alt=''>
                 <p className='GetInTouch__mail'>drgon8otsuka@gmail.com</p>
               </a>
             </div>
             <div className='GetInTouch__text__linkitem'>
-              <a href='#/' alt=''>
+              <a
+                href='https://www.wantedly.com/id/otsuka_ryutaro'
+                alt=''
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <p className='GetInTouch__wantedly'>Wantedly</p>
               </a>
             </div>
             <div className='GetInTouch__text__linkitem'>
-              <a href='#/'>
+              <a
+                href='https://twitter.com/tsuka_ryu'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <img className='GetInTouch__twitter' src={twitter} alt='' />
               </a>
-              <a href='#/'>
+              <a
+                href='https://github.com/tsuka-ryu'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <img className='GetInTouch__github' src={github} alt='' />
               </a>
             </div>

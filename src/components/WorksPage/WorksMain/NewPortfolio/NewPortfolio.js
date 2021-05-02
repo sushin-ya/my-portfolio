@@ -36,7 +36,11 @@ export default function NewPortfolio() {
             <div className='Works__Main__Item__text__skills Works__newPortfolio__skills'>
               HTML/CSS/React/GSAP/Parallax.js
             </div>
-            <a href='#/'>
+            <a
+              href='https://github.com/tsuka-ryu/my-portfolio'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               <img
                 className='Works__Main__Item__text__github Works__newPortfolio__github'
                 src={github}

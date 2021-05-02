@@ -36,7 +36,11 @@ export default function Cinamas() {
             <div className='Works__Main__Item__text__skills Works__oldPortfolio__skills'>
               HTML/CSS/React/Gatsby/responsive web design
             </div>
-            <a href='#/'>
+            <a
+              href='https://github.com/tsuka-ryu/tsuka-ryu.github.io'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
               <img
                 className='Works__Main__Item__text__github Works__oldPortfolio__github'
                 src={github}
